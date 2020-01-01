@@ -1,0 +1,12 @@
+1;2048;Supplementary alignment
+2;1024;Read is PCR or optical duplicate
+3;512;Read fails platform/vendor quality checks
+4;256;Not primary alignment
+5;128;Second in pair
+6;64;First in pair
+7;32;Mate reverse strand
+8;16;Read reverse strand
+9;8;Mate unmapped
+10;4;Read unmapped
+11;2;Read mapped in proper pair
+12;1;Read paired

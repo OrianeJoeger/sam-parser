@@ -31,8 +31,3 @@ python3 sam-parser.py data/mapping.sam cigar
 ```bash
 python3 sam-parser.py data/mapping.sam flag
 ```
-
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.

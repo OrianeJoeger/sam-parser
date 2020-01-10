@@ -38,9 +38,9 @@ class Status :
 		else:
 			self.__pairs[b][a] += 1
 
-
-
 	def print(self):
+		print('STATS')
+		print('================================')
 		print("Il y a " + str(self.__reads[self.MAPPED]) + " reads mappés")
 		print("Il y a " + str(self.__reads[self.PARTIAL]) + " reads partiellement mappés")	
 		print("Il y a " + str(self.__reads[self.UNMAPPED]) + " reads non mappé")

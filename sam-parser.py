@@ -6,6 +6,7 @@ import src.extract as Extract
 import src.Cigar as Cigar
 import src.Flag as Flag
 import src.Status as Status
+import src.Header as Header
 
 def help():
 	print("Utilisation: python3 sam-parser.py [FICHIER] [METHOD]")
@@ -14,10 +15,10 @@ def help():
 
 def main():
 	if (len(sys.argv) == 3):
+		
+		#GESTION D'ERREUR
 		file = sys.argv[1]
 		method = sys.argv[2]
-		status = Status.Status()
-
 		if (method == "cigar"):
 			evaluator = Cigar.Cigar()
 		elif (method == "flag"):
@@ -26,6 +27,13 @@ def main():
 			help()
 			exit(1)
 
+		#HEADER DESCRIPTION
+		header = Header.Header()
+		header.load_format_header(file)
+		header.print()
+
+		#SAM STATISTIQUE
+		status = Status.Status()
 		for pair in Extract.run_pair(file):
 			status.push(
 				evaluator.get_mapping_status(pair[0]),

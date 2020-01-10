@@ -3,13 +3,13 @@
 
 import sys
 import src.extract as Extract
-import src.cigar as Cigar
-import src.flag as Flag
+import src.Cigar as Cigar
+import src.Flag as Flag
 import src.Status as Status
 
 def help():
-	print("Utilisation: python3 main.py [FICHIER] [METHOD]")
-	print("[FICHIER] fichier de type SAM")
+	print("Utilisation: python3 sam-parser.py [FICHIER] [METHOD]")
+	print("[FICHIER] fichier de type type SAM")
 	print("[METHOD] la méthode utilisé doit être 'flag' or 'cigar'")
 
 def main():

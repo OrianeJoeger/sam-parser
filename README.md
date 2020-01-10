@@ -17,7 +17,7 @@ Affichage d'une aide à l'utilisation
 python3 sam-parser.py --help
 ```
 ```output
-Utilisation: python3 main.py [FICHIER] [METHOD]
+Utilisation: python3 sam-parser.py [FICHIER] [METHOD]
 [FICHIER] fichier de type SAM
 [METHOD] la méthode utilisé doit être 'flag' or 'cigar'
 ```

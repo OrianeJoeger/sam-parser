@@ -2,7 +2,7 @@ import csv
 
 def run_pair(file):
 	paire = []
-	tmp_reads = {}	
+	tmp_reads = {}
 	
 	with open(file) as sam_file:
 		sam_reader = csv.reader(sam_file, delimiter='\t')

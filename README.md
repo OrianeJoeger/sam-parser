@@ -1,3 +1,5 @@
+Accompagnement d'une étudiante en Master bio-informatique pour la réalisation de projet de parsing de fichier SAM en python
+
 # Analyse de fichier SAM
 
 
